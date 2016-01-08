@@ -1,5 +1,5 @@
-# stylep-name
-<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-name align=right height=95>
+# stylep-positioning
+<img src=https://avatars1.githubusercontent.com/u/16121328?v=3&s=200 title=stylep-positioning align=right height=95>
 
 Everything you need to get started making a new style pattern.
 
@@ -7,22 +7,22 @@ Everything you need to get started making a new style pattern.
 You can install using the [spm](https://github.com/stylep/stylep) command or install using npm and the project title.
 
 ``` shell
-spm install name
+spm install positioning
 ```
 
 ## Usage
 ``` css
-/* name.css */
+/* positioning.css */
 
-@import “stylep-name”;
+@import “stylep-positioning”;
 
 .class {
 
   /* Button Design Pattern */
-  @extend %name;
+  @extend %positioning;
 
-  /* Customize your name */
-  @mixin name param, param;
+  /* Customize your positioning */
+  @mixin positioning param, param;
 
   /* or roll your own */
 
@@ -33,13 +33,13 @@ spm install name
 ## Patterns
 Placeholder selectors that contain common styles for structure and basic behavior.
 
-#### `@extend %name-inline;`
+#### `@extend %positioning-inline;`
 Describe what this pattern does.
 
 ## Styles
 Customizable presets that give your pattern a specific style-set.
 
-### name-solid
+### positioning-solid
 Describe the visual look and feel of this style.
 
 ##### Options
@@ -49,7 +49,7 @@ Describe the visual look and feel of this style.
 ##### Example
 ```css
 /* describe in english what this following statement really means in detail */
-@mixin name-solid default-value;
+@mixin positioning-solid default-value;
 ```
 
 ## License
