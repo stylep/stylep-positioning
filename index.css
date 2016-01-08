@@ -1,9 +1,42 @@
-%name-of-pattern {
-}
+/* plank - /plaNGk/ noun
+ * 1. a long, thin, flat piece of timber, used especially in building and flooring. */
 
-@define-mixin name-of-style
-  $param-name: default-value {
-
+@define-mixin plank
+  $p: relative,
+  $n: 0 {
+  position: $p;
+  left: calc(0 + $n);
+  right: calc(0 + $n);
   @mixin-content;
 }
 
+/* sprawl - // verb
+ * 1. sit, lie, or fall with one's arms and legs spread out in an ungainly or awkward way. */
+@define-mixin sprawl
+  $n: 0 {
+  @mixin plank absolute, $n {
+    bottom: calc(0 + $n);
+    top: calc(0 + $n);
+  }
+}
+
+@define-mixin bottom {
+  @mixin plank absolute { bottom: 0; }
+}
+
+@define-mixin top {
+  @mixin plank absolute { top: 0; }
+}
+
+
+@define-mixin outside-right
+  $n: 100% {
+  left: $n;
+  position: absolute;
+}
+
+@define-mixin outside-left
+  $n: 100% {
+  right: $n;
+  position: absolute;
+}
